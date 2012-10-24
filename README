@@ -1,0 +1,21 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=4285
+
+Vim can support complex window layouts, but they can put users off because
+they reduce the size of the main editing window.  ToggleMaximize addresses
+this issue, by allowing the user to switch between a large editor window,
+and his own complex window layout.
+
+Press Ctrl-F or Ctrl-\ to maximize the size of the current window, press
+again to restore the original window layout.
+
+Ctrl-V and Ctrl-H toggle maximize in vertical/horizontal direction only.
+
+Maximization is forced to respect winminwidth and winminheight, so if you
+have these set, other windows will not fully shrink to the edges.
+
+If the user changes the size of any windows after maximizing, the script
+still thinks the toggle is ON, so next time it is used it will restore your
+old layout, rather than re-maximize (unlike some window managers).
+
+
+
